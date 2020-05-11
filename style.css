@@ -1,0 +1,24 @@
+#navbar__btn--cadastre {
+    border-radius: 21px;
+    
+}
+
+.navbar__btn--border {
+    border: 1px solid transparent;
+    border-radius: 15px;
+}
+
+.navbar__btn--border:hover {
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    background-color: transparent;
+    color: #6c757d;
+}
+
+.navbar__btn--active {
+    color: #212529;
+}
+
+.navbar__btn--active:hover {
+    color: #212529;
+}

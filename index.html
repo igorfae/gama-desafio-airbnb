@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AirIsfRooms</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container-fluid border-bottom shadow-sm mb-4">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./img/Airbnb_Logo_Bélo.svg"
+            width="100"
+            height="auto"
+            alt=""
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="btn btn-outline-secondary navbar__btn--border navbar__btn--active" href="#">
+                Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-secondary navbar__btn--border" href="#">Hospede em sua casa</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-secondary navbar__btn--border" href="#">Ajuda</a>
+            </li>
+            <li class="nav-item mr-2">
+              <a class="btn btn-outline-secondary navbar__btn--border" href="#">Entrar</a>
+						</li>
+						<li class="nav-item">
+              <a id="navbar__btn--cadastre" class="btn btn-outline-secondary" href="#">Cadastre-se</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>    
+
+    <div class="container">
+      <div class="nav-scroller py-1 mb-2">
+        <nav class="nav d-flex justify-content-between">
+          <a class="p-2 text-muted" href="#" onclick="filtrarTipos('')">Todos</a>
+          <a class="p-2 text-muted" href="#" onclick="filtrarTipos('Apartamento')">Apartamento</a>
+          <a class="p-2 text-muted" href="#" onclick="filtrarTipos('Casa')">Casa</a>
+          <a class="p-2 text-muted" href="#" onclick="filtrarTipos('Chácara')">Chácara</a>
+          <a class="p-2 text-muted" href="#" onclick="filtrarTipos('Estúdio')">Estúdio</a>
+          <a class="p-2 text-muted" href="#" onclick="filtrarTipos('Loft')">Loft</a>
+          <a class="p-2 text-muted" href="#" onclick="filtrarTipos('Quarto')">Quarto</a>
+          <a class="p-2 text-muted" href="#" onclick="filtrarTipos('Sítio')">Sítio</a>
+        </nav>
+      </div>
+
+
+      <div id="cards" class="row">  
+
+      </div>      
+    </div>
+    
+    <footer class="container">
+      <p class="float-right"><a href="#">Back to top</a></p>
+      <p>© Igor Fae - Gama Academy - Desafio Clone Airbnb</p>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="index.js"></script>
+
+  </body>
+</html>
